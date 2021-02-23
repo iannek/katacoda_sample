@@ -1,8 +1,8 @@
 {
-  "title": "SampleShellScriptScenario",
-  "description": "SampleShellScriptScenario",
+  "title": "Sample Scenario2",
+  "description": "Sample Scenario2",
   "difficulty": "Beginner",
-  "time": "60m",
+  "time": "10",
   "details": {
     "steps": [
       {
