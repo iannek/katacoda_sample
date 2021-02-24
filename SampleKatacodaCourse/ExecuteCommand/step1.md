@@ -8,7 +8,7 @@
 `touch hoge.sh`{{execute}}
 
 2. シェルスクリプトの内容書き込み
-`echo "Hello World" <  hoge.sh`{{execute}}
+`echo "Hello World" > hoge.sh`{{execute}}
 
 3. シェルスクリプトの実行 
 `bash hoge.sh`{{execute}}

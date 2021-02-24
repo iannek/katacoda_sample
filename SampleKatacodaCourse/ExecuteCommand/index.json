@@ -3,6 +3,7 @@
   "description": "Sample Scenario",
   "difficulty": "Beginner",
   "time": "10",
+  "files": [ "app.js", "index.js" ],
   "details": {
     "steps": [
       {
@@ -26,7 +27,8 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "editor-terminal",
+    "uisettings": "javascript"
   },
   "backend": {
     "imageid": "bash"
