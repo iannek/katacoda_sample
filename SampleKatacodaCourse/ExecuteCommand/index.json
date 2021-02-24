@@ -6,16 +6,12 @@
   "details": {
     "steps": [
       {
-        "title": "シェルスクリプトを作成して実行する",
+        "title": "シェルスクリプトを作成して実行する(演習)",
         "text": "step1.md"
       },
       {
-        "title": "パッケージをインストールする",
+        "title": "シェルスクリプトを作成して実行する(解答)",
         "text": "step2.md"
-      },
-      {
-        "title": "Step 3",
-        "text": "step3.md"
       }
     ],
     "intro": {
