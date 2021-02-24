@@ -1,11 +1,11 @@
 {
-  "title": "My First courses",
-  "description": "Sample katacoda course",
+  "title": "シェルスクリプト演習",
+  "description": "シェルスクリプト演習",
   "courses": [
     {
-      "course_id": "SampleScenario",
-      "title": "Sample Scenario",
-      "description": "Sample Scenario"
+      "course_id": "ExecuteCommand",
+      "title": "演習1.　コマンドの順次実行と結果の確認",
+      "description": "簡単なコマンドでシェルスクリプトを作成、実行してみる"
     },
     {
       "course_id": "SampleScenario2",
