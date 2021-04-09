@@ -3,7 +3,7 @@
   "description": "シェルスクリプト演習",
   "courses": [
     {
-      "course_id": "ExecuteCommand",
+      "course_id": "コマンド実行シナリオ",
       "title": "演習1.　コマンドの順次実行と結果の確認",
       "description": "簡単なコマンドでシェルスクリプトを作成、実行してみる"
     },
