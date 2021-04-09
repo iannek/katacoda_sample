@@ -1,6 +1,6 @@
 {
-  "title": "Sample Scenario",
-  "description": "Sample Scenario",
+  "title": "シナリオサンプル",
+  "description": "シナリオサンプル",
   "difficulty": "Beginner",
   "time": "10",
   "details": {
@@ -22,8 +22,7 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal",
-    "uisettings": "javascript"
+    "uilayout": "vscode-terminal-split"
   },
   "backend": {
     "imageid": "bash"
