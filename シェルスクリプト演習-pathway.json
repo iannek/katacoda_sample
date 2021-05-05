@@ -10,12 +10,12 @@
     {
       "course_id": "演習2",
       "title": "演習2.条件分岐処理の実行",
-      "description": "処理失敗時のコードを追加する等の条件分岐と特殊変数も組み合わせ"
+      "description": ""
     },
     {
       "course_id": "演習3",
       "title": "演習3.繰り返しループ処理の実行",
-      "description": "固定回数の繰り返しループ処理と無限ループ処理"
+      "description": ""
     },
     {
       "course_id": "演習4",
