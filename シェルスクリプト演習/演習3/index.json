@@ -22,9 +22,9 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "vscode-terminal-split"
   },
   "backend": {
-    "imageid": "bash"
+    "imageid": "ubuntu:1804"
   }
 }

@@ -75,5 +75,6 @@ test2.shを実行する。
 以下の内容がターミナル上に出力されていることを確認  
 
 ```
+cat: hoge.txt: No such file or directory
 NG
 ```
