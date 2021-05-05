@@ -18,7 +18,7 @@
 Hello World
 ```
 
-## シェルスクリプトの実行  
+## シェルスクリプトの実行(bashで実行する場合)  
 
 `bash test.sh`{{execute}}
 
@@ -28,3 +28,11 @@ Hello World
 Hello World
 ```
 
+## シェルスクリプトの実行(実行権限をつけて実行する場合)
+
+実行権限を付与  
+
+`chmod 755 test.sh`{{execute}}
+
+実行  
+`./test.sh`{{execute}}

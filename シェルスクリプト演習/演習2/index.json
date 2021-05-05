@@ -1,6 +1,6 @@
 {
-  "title": "Sample Scenario2",
-  "description": "Sample Scenario2",
+  "title": "演習2",
+  "description": "演習2",
   "difficulty": "Beginner",
   "time": "10",
   "details": {
@@ -34,9 +34,9 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "vscode-terminal-split"
   },
   "backend": {
-    "imageid": "bash"
+    "imageid": "ubuntu:1804"
   }
 }
