@@ -4,7 +4,8 @@
   "courses": [
     {
       "course_id": "演習1",
-      "title": "演習1.　コマンドの順次実行と結果の確認"
+      "title": "演習1.　コマンドの順次実行と結果の確認",
+      "description": ""
     },
     {
       "course_id": "演習2",
