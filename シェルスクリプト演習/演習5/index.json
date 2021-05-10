@@ -1,6 +1,6 @@
 {
-  "title": "Sample Scenario2",
-  "description": "Sample Scenario2",
+  "title": "演習5",
+  "description": "演習5",
   "difficulty": "Beginner",
   "time": "10",
   "details": {
@@ -12,18 +12,6 @@
       {
         "title": "Step 2",
         "text": "step2.md"
-      },
-      {
-        "title": "Step 3",
-        "text": "step3.md"
-      },
-      {
-        "title": "Step 4",
-        "text": "step4.md"
-      },
-      {
-        "title": "Step 5",
-        "text": "step5.md"
       }
     ],
     "intro": {
@@ -34,9 +22,9 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "vscode-terminal-split"
   },
   "backend": {
-    "imageid": "bash"
+    "imageid": "ubuntu:1804"
   }
 }

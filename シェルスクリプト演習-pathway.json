@@ -20,27 +20,27 @@
     {
       "course_id": "演習4",
       "title": "演習4.コメント記述",
-      "description": "コメントアウト"
+      "description": ""
     },
     {
       "course_id": "演習5",
       "title": "演習5.処理結果の出力分け",
-      "description": "スクリプトの標準出力・標準エラー出力の出しワケ"
+      "description": ""
     },
     {
       "course_id": "演習6",
       "title": "演習6.四則演算",
-      "description": "インクリメント処理などで演算処理。環境変数から数値を読み取って算出して返す"
+      "description": ""
     },
     {
       "course_id": "演習7",
       "title": "演習7.引数の扱いテクニック",
-      "description": "引数の受け取り方、引数の件数チェック"
+      "description": ""
     },
     {
       "course_id": "演習8",
       "title": "演習8.対話式実行テクニック",
-      "description": "標準入力からの情報を取り込み実行処理"
+      "description": "標準入力からの情報を取り込み実行処理(ここだけ扱いどうするか悩む…資料に乗せるか。そもそも消すか)"
     },
     {
       "course_id": "演習9",
