@@ -5,50 +5,22 @@
 ```
 #!/bin/bash
 
-while true
+while read filename
 do
-  echo "loop" >> loop.txt
-  sleep 5
-done
+  touch filename 
+  echo $filenameを作成しました
+done < /tmp/filelist.txt
 
 ```
 
 test.shをバックグラウンドで実行する。  
 
-`bash test.sh &`{{execute}}
+`bash test.sh`{{execute}}
 
-5秒ごとにloop.txtに"loop"が追記されていることをエディタからloop.txtを開いて確認する  
+以下の通り表示されること、また読み取ったファイル名の空ファイルが作成されていることを確認する
 
-jobsコマンドを実行して、バックグラウンドで実行されていることとジョブ番号を確認する。  
-
-`jobs`{{execute}}
-
-jobsコマンド実行例  
 ```
-[1]+  Running                 bash test.sh &
+aaa.txtを作成しました
+bbb.txtを作成しました
+ccc.txtを作成しました
 ```
-
-killコマンドを実行して、バックグラウンドで実行したシェルスクリプトを停止する。  
-
-`kill %1`{{execute}}
-
-再度jobsコマンドを実行して、何も表示されないことを確認する。  
-
-再度、test.shをバックグラウンドで実行する。  
-
-`bash test.sh &`{{execute}}
-
-jobsコマンドを実行して、バックグラウンドで実行されていることとジョブ番号を確認する。  
-
-`jobs`{{execute}}
-
-jobsコマンド実行例  
-```
-[1]+  Running                 bash test.sh &
-```
-
-fgコマンドを使用してバックグラウンドジョブをフォアグラウンドに持ってくる。  
-
-`fg 1`{{execute}}
-
-フォアグラウンド実行されていることを確認したら、ctrl + c で停止する。
