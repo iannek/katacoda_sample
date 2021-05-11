@@ -4,16 +4,16 @@
 
 ```
 #!/bin/bash
-VAR1=5 #任意の数値
-VAR2=3 #任意の数値
+VAR1=5 #任意の整数
+VAR2=3 #任意の整数
 
 echo $VAR1 + $VAR2 = $(($VAR1 + $VAR2))
 echo $VAR1 - $VAR2 = $(($VAR1 - $VAR2))
 echo $VAR1 \* $VAR2 = $(($VAR1 * $VAR2))
-echo $VAR1 / $VAR2 = $(($VAR1 / $VAR2))  
-# 少数計算を行いたい場合(例:awkを使用)
+echo $VAR1 / $VAR2 = $(($VAR1 / $VAR2))
+# 小数点の計算を行いたい場合(例:awkを使用)
 ## echo $VAR1 / $VAR2 = `echo "$VAR1 $VAR2" | awk '{print $1 / $2}'`
-# 少数計算を行いたい場合(例:bcを使用(本環境では事前にインストールが必要 "apt install bc"))
+# 小数点の計算を行いたい場合(例:bcを使用(本環境ではコマンド"apt install bc"を実行して事前にインストールする必要がある))
 ## echo $VAR1 / $VAR2 = `echo "scale=5; $VAR1 / $VAR2" | bc`
 ```
 
@@ -21,7 +21,7 @@ test.shを実行する。
 
 `bash test.sh`{{execute}}
 
-計算結果が表示されることを確認する。  
+計算結果が表示されることを確認。  
 (以下は上記の例の場合の表示)
 
 ```
@@ -33,19 +33,25 @@ test.shを実行する。
 
 ## 環境変数を読み取って四則演算を繰り返し行うシェルスクリプト  
 
-環境変数をターミナルから設定する場合  
+exportコマンドを実行して環境変数をターミナルから設定する。  
 
 `export ENVVAR1=5`{{execute}}
 
-環境変数が設定されたかを確認する
+printenvコマンドを実行して環境変数が設定されたことを確認。  
 
-`printenv | grep ENVVAR`{{execute}}  
+`printenv`{{execute}}  
 
-上記コマンドの結果が以下のように表示されていることを確認する  
+上記コマンドを実行すると、設定されている環境変数が全て出力される。  
+環境変数の中に以下の表示があることを確認。  
 
 ```
-ENVVAR1=5
+ENVVAR1=1
 ```
+
+備考…後の演習に出てくるパイプラインを使用すると、ENVVARだけを特定して表示することが出来る。  
+その場合、下記のようなコマンドとなる。  
+
+`printenv | grep ENVVAR1`{{execute}}  
 
 シェルスクリプトファイル"test2.sh"をエディタから作成し、下記の内容を書き込む。  
 
@@ -61,13 +67,13 @@ done
 echo result = $res
 ```
 
-test.shを実行する。  
+test2.shを実行する。  
 
 `bash test2.sh`{{execute}}
 
-計算結果が表示されることを確認する。  
+計算結果が表示されることを確認。  
 (以下は上記の例の場合の表示)
 
 ```
-result = 60
+result = 56
 ```

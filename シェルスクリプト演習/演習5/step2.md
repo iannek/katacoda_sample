@@ -21,12 +21,15 @@ test.shを実行する。
 
 `bash test.sh`{{execute}}
 
-result.txtが作成され、"OK"が記載されていることを確認する  
-
+result.txtが作成され、"OK"が記載されていることを確認。  
 
 次のコマンドを実行して、hoge.txtを削除する。  
 
 `rm hoge.txt`{{execute}}
 
-error.txtが作成され、"cat: hoge.txt: No such file or directory"が記載されていることを確認する  
-result.txtが作成され、"NG"が記載されていることを確認する  
+test.shを実行する。  
+
+`bash test.sh`{{execute}}
+
+error.txtが作成され、"cat: hoge.txt: No such file or directory"が記載されていることを確認。  
+result.txtが作成され、"NG"が記載されていることを確認。  

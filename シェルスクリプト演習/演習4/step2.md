@@ -15,7 +15,7 @@ else
 fi
 ```
 
-次のコマンドを実行して、hoge.txtを作成する。
+次のコマンドを実行して、hoge.txtを作成する。  
 
 `touch hoge.txt`{{execute}}
 
