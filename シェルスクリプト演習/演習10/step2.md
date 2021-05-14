@@ -7,7 +7,7 @@
 
 while read filename
 do
-  touch filename 
+  touch $filename 
   echo $filenameを作成しました
 done < /tmp/filelist.txt
 
