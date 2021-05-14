@@ -5,7 +5,7 @@
 ```
 #!/bin/bash
 
-for ((i=0; i<6; i++))
+for ((i=0; i<5; i++))
 do
   echo $i
 done
@@ -60,10 +60,11 @@ loop
 ```
 #!/bin/bash
 
+FILE="hoge.txt"
+
 while true
 do
-  cat hoge.txt
-  if [ $? = 0 ]; then
+  if [ -e $FILE ]; then
     echo "OK"
     break
   else
@@ -81,7 +82,6 @@ test3.shを実行する。
 hoge.txtが存在しない場合は、以下の内容が3秒ごとにターミナル上に表示されていることを確認。  
 
 ```
-cat: hoge.txt: No such file or directory
 NG
 ```
 
@@ -94,9 +94,7 @@ OK
 処理中にhoge.txtを作成した場合は下記のようになりループが終了することを確認。
 
 ```
-cat: hoge.txt: No such file or directory
 NG
-cat: hoge.txt: No such file or directory
-NG
+NG ←次の処理が実行される前にファイルhoge.txtを作成
 OK
 ```

@@ -35,7 +35,7 @@ test.shを実行する。
 
 exportコマンドを実行して環境変数をターミナルから設定する。  
 
-`export ENVVAR1=5`{{execute}}
+`export ENVVAR1=1`{{execute}}
 
 printenvコマンドを実行して環境変数が設定されたことを確認。  
 
@@ -61,7 +61,7 @@ res=${ENVVAR1}
 
 for ((i=1; i<11; i++))
 do
-  res=$(($res + $i))
+  res=$((res + i))
 done
 
 echo result = $res

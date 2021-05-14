@@ -4,10 +4,10 @@
 
 ```
 #!/bin/bash
-cat hoge.txt # hoge.txtの中身を表示
+FILE="hoge.txt"　# 確認対象のファイルを指定
 
 # hoge.txtが存在する場合は"YES",存在しない場合は"NG"を出力
-if [ $? = 0 ]; then
+if [ -e $FILE ]; then
   #echo "OK"
   echo "YES"
 else
